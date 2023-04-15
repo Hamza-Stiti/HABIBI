@@ -10,12 +10,12 @@ public class Pump extends ActiveElement implements PumpPipe{
 
     @Override
     public String GetType() {
-        return null;
+        return "pump";
     }
 
     @Override
     public void ChangeState() {
-
+        working = !working;
     }
 
 }
